@@ -14,19 +14,19 @@ Power Supply: 12V DC (for LEDs) and 5V/USB (for ESP32)
 Logic Level Shifter: (Recommended) 3.3V to 5V for the LED data line.
 Resistors: 1kΩ and 2kΩ (for Echo pin voltage divider).
 # 🔌 Wiring Diagram
-# 1. Ultrasonic Sensor (HC-SR04)
+## 1. Ultrasonic Sensor (HC-SR04)
 HC-SR04 Pin	ESP32-S3 Pin	Notes
 VCC	5V / Vin	Power from ESP32 5V pin
 Trig	GPIO 7	Digital Output
 Echo	GPIO 15	Use Voltage Divider (to 3.3V)
 GND	GND	Common Ground
-# 2. LED Strip (WS2815)
-# WS2815 Wire	Connection Point	Notes
+## 2. LED Strip (WS2815)
+## WS2815 Wire	Connection Point	Notes
 +12V (Red)	12V PSU (+)	Do NOT connect to ESP32
 GND (White)	12V PSU (-)	Connect to PSU (-) AND ESP32 GND
 DI (Data)	GPIO 35	Data signal from ESP32
 BI (Backup)	GND	Tie to Ground if not used
-# ⚠️ IMPORTANT: Always connect the Ground of your 12V power supply to the GND pin of the ESP32.
+## ⚠️ IMPORTANT: Always connect the Ground of your 12V power supply to the GND pin of the ESP32.
 # 💻 Software Setup
 1. Prerequisites
 Install Arduino IDE.
@@ -53,7 +53,7 @@ Heat: Ensure your 12V power supply has enough Amps for your LED count (roughly 1
 Echo Pin: The Echo pin outputs 5V. To protect your ESP32-S3, use a voltage divider (1k resistor from Echo to GPIO 15, and 2k resistor from GPIO 15 to GND).
 # 🛠 Author
 Malik Maaz - Initial Work - engrpakistan
-📄 License
+# 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 How to use this on GitHub:
 Create a new repository on GitHub.
