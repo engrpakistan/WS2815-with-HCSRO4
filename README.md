@@ -1,5 +1,5 @@
 # WS2815-with-HCSRO4
-#ESP32-S3 Distance-Reactive LED Visualizer (HC-SR04 & WS2815)
+# ESP32-S3 Distance-Reactive LED Visualizer (HC-SR04 & WS2815)
 This project uses an ESP32-S3 and an HC-SR04 Ultrasonic Sensor to measure distance and provide real-time visual feedback using a WS2815 12V LED strip. As an object gets closer to the sensor, the LEDs change color (Green to Red) and the "bar" fills up.
 🚀 Features
 Real-time Distance Sensing: Accurate ultrasonic measurements via the HC-SR04.
